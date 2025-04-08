@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Availability</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Modern Navigation Bar -->
+    <nav>
+        <div class="logo-container">
+            <img src="3.jpg" alt="ClayGo Logo" class="logo-img">
+            <span class="logo-text">ClayGo!</span>
+        </div>
+        <div class="nav-buttons">
+            <a href="index.html" class="btn">Home</a>
+            <a href="availability.html" class="btn btn-primary">Check Availability</a>
+            <a href="make_reservation.html" class="btn">Make Reservation</a>
+        </div>
+    </nav>
+    <div class="reservation-container">
+        <h2>Reserve Your Spot – Get yours now!</h2>
+        <form class="reservation-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+
+            <label for="table">Table to Reserved:</label>
+            <select id="table" required>
+                <option value="" disabled selected>Select a table</option>
+                <option value="A">Table A</option>
+                <option value="B">Table B</option>
+                <option value="C">Table C</option>
+                <option value="D">Table D</option>
+                <option value="E">Table E</option>
+            </select>
+            
+            <label for="date">Date:</label>
+            <input type="date" id="date">
+
+            <label for="time-start">Time Start:</label>
+            <input type="time" id="time-start" name="time-start" required>
+        
+            <label for="time-end">Time End:</label>
+            <input type="time" id="time-end" name="time-end" required>
+
+            <label for="contact">Email or Phone Number:</label>
+            <input type="text" id="contact" placeholder="Enter email or phone number">
+
+            <button type="submit">Reserve now!</button>
+        </form>
+    </div>  
+
+</body>
+</html>
